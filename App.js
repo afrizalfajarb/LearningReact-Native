@@ -6,11 +6,12 @@ export default class App extends React.Component {
     render() {
         return (
           <View style={styles.container}>
-            <Judul/>
+            <Judul title="BIODATA"/>
+            <Judul title="LOGIN"/>
+            <Judul title="FORM"/>
             <Text>Afrizal Fajar Barokah</Text>
             <Text>XI RPL 4</Text>
             <Text>03</Text>
-            <Text>Ganteng Maksimal</Text>
             <Image
     source={require('./afrizal.jpg')}
     style={ { height: 200 , width:200}}/>
@@ -25,7 +26,7 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'yellow',
+    backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center',
   },

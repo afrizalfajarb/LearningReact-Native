@@ -3,17 +3,16 @@ import {Text} from 'react-native';
 class Judul extends React.Component{
 	render(){
 		return(
-			<Text style = {salon.Judul}
-			>BIODATA</Text>
+			<Text style = {style.Header}>{this.props.title}</Text>
 			)
 	}
 
 }
-const salon = {
-	Judul:{
-		color : '#f00',
+const style = {
+	Header:{
+		color : 'red',
 		fontSize: 50,
-		backgroundColor: 'yellow'
+		backgroundColor: 'white'
 	}
 }
 export default Judul;
