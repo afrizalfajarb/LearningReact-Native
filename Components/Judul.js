@@ -1,18 +1,24 @@
 import React from 'react';
 import {Text} from 'react-native';
-class Judul extends React.Component{
-	render(){
-		return(
-			<Text style = {style.Header}>{this.props.title}</Text>
-			)
-	}
 
+class Judul extends React.Component{
+    render(){
+        return (
+            <Text style={salon.judul}
+            >{this.props.title}</Text>
+
+        )
+    }
 }
-const style = {
-	Header:{
-		color : 'red',
-		fontSize: 50,
-		backgroundColor: 'white'
-	}
+
+const salon = {
+    judul:{
+        color: '#fff',
+        fontSize: 50,
+        justifyContent:'center',
+        textAlign: 'center',
+        backgroundColor:'#000000'
+    }
 }
-export default Judul;
+
+export default Judul; 
